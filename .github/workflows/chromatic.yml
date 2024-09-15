@@ -48,7 +48,7 @@ jobs:
   chromatic:
     needs: [get-metadata]
     runs-on: ubuntu-latest
-    if: needs.get-metadata.outputs.is_dispatch == 'true' || (needs.get-metadata.outputs.design_system_files_changed == 'true' && needs.get-metadata.outputs.is_community_pr == 'false' && needs.get-metadata.outputs.is_pr_target_master == 'true' && needs.get-metadata.outputs.is_pr_approved == 'true')
+    if: needs.get-metadata.outputs.is_dispatch == 'true'
     steps:
       - name: Print metadata
         run: |
