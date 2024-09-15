@@ -48,12 +48,12 @@ jobs:
   chromatic:
     needs: [get-metadata]
     if: >-
-      ${{ needs.get-metadata.outputs.is_dispatch == 'true' }} ||
+      needs.get-metadata.outputs.is_dispatch == 'true' ||
       (
-        ${{ needs.get-metadata.outputs.design_system_files_changed == 'true' }} &&
-        ${{ !needs.get-metadata.outputs.is_community_pr }} &&
-        ${{ needs.get-metadata.outputs.is_target_master }} &&
-        ${{ needs.get-metadata.outputs.is_pr_approved }}
+       needs.get-metadata.outputs.design_system_files_changed == 'true' &&
+       needs.get-metadata.outputs.is_community_pr == 'true' &&
+       needs.get-metadata.outputs.is_target_master == 'true' &&
+       needs.get-metadata.outputs.is_pr_approved == 'true'
       )
     runs-on: ubuntu-latest
     steps:
