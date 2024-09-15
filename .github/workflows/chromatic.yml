@@ -30,11 +30,19 @@ jobs:
               - packages/design-system/**
               - .github/workflows/chromatic.yml
 
+      - name: Print metadata
+        run: |
+          echo "design_system_files_changed: ${{ steps.changed.outputs.design_system == 'true' }}"
+          echo "is_community_pr: ${{ contains(github.event.pull_request.labels.*.name, 'community') }}"
+          echo "is_target_master: ${{ github.event.pull_request.base.ref == 'master' }}"
+          echo "is_dispatch: ${{ github.event_name == 'workflow_dispatch' }}"
+          echo "is_pr_approved: ${{ github.event.review.state == 'approved' }}"
+
     outputs:
       design_system_files_changed: ${{ steps.changed.outputs.design_system == 'true' }}
       is_community_pr: contains(github.event.pull_request.labels.*.name, 'community')
       is_target_master: github.event.pull_request.base.ref == 'master'
-      is_dispatch: github.event.workflow == 'workflow_dispatch'
+      is_dispatch: github.event_name == 'workflow_dispatch'
       is_pr_approved: github.event.review.state == 'approved'
 
   chromatic:
