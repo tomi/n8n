@@ -40,10 +40,10 @@ jobs:
 
     outputs:
       design_system_files_changed: ${{ steps.changed.outputs.design_system == 'true' }}
-      is_community_pr: contains(github.event.pull_request.labels.*.name, 'community')
-      is_target_master: github.event.pull_request.base.ref == 'master'
-      is_dispatch: github.event_name == 'workflow_dispatch'
-      is_pr_approved: github.event.review.state == 'approved'
+      is_community_pr: ${{ contains(github.event.pull_request.labels.*.name, 'community') }}
+      is_target_master: ${{ github.event.pull_request.base.ref == 'master' }}
+      is_dispatch: ${{ github.event.workflow == 'workflow_dispatch' }}
+      is_pr_approved: ${{ github.event.review.state == 'approved' }}
 
   chromatic:
     needs: [get-metadata]
