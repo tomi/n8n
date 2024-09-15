@@ -34,7 +34,7 @@ jobs:
               - '!docker/**'
               - '!packages/@n8n/benchmark/**'
               - '!**/*.md'
-          predicate-quantifier: 'every'
+          list-files: 'csv'
 
     outputs:
       # The e2e tests should run when:
