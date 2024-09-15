@@ -51,7 +51,7 @@ jobs:
       needs.get-metadata.outputs.is_dispatch == 'true' ||
       (
        needs.get-metadata.outputs.design_system_files_changed == 'true' &&
-       needs.get-metadata.outputs.is_community_pr == 'true' &&
+       needs.get-metadata.outputs.is_community_pr == 'false' &&
        needs.get-metadata.outputs.is_target_master == 'true' &&
        needs.get-metadata.outputs.is_pr_approved == 'true'
       )
