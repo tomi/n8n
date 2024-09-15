@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 2
 
       - name: Determine changed files
-        uses: dorny/paths-filter@v3.0.2
+        uses: tomi/paths-filter-action@v3.0.2
         id: changed
         with:
           filters: |
