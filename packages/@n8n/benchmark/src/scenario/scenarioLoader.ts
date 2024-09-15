@@ -25,6 +25,8 @@ export class ScenarioLoader {
 				continue;
 			}
 
+			console.log("hi")
+
 			// Load the scenario manifest file
 			const [scenario, validationErrors] =
 				this.loadAndValidateScenarioManifest(scenarioManifestPath);

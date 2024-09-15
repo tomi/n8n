@@ -24,6 +24,8 @@ RUN set -eux; \
 
 COPY docker-entrypoint.sh /
 
+RUN echo "hi"
+
 RUN \
 	mkdir .n8n && \
 	chown node:node .n8n
