@@ -35,6 +35,7 @@ jobs:
               - '!packages/@n8n/benchmark/**'
               - '!**/*.md'
           list-files: 'csv'
+          predicate-quantifier: 'every'
 
     outputs:
       # The e2e tests should run when:
