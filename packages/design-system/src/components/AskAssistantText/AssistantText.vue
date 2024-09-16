@@ -3,6 +3,8 @@ withDefaults(defineProps<{ text: string; size: 'small' | 'medium' | 'large' | 'x
 	text: '',
 	size: 'medium',
 });
+
+console.log("hi")
 </script>
 
 <template>
