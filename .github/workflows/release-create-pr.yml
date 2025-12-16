@@ -57,6 +57,13 @@ jobs:
       - name: Update Changelog
         run: node .github/scripts/update-changelog.mjs
 
+      - name: Check if release branch already exists
+        run: |
+          if git ls-remote --heads origin "refs/heads/release/${{ env.NEXT_RELEASE }}" | grep -q "release/${{ env.NEXT_RELEASE }}"; then
+            echo "Error: Release branch 'release/${{ env.NEXT_RELEASE }}' already exists"
+            exit 1
+          fi
+
       - name: Push the base branch
         env:
           BASE_BRANCH: ${{ github.event.inputs.base-branch }}
