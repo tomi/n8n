@@ -76,6 +76,7 @@ erDiagram
   timestamp_3__with_time_zone updatedAt
   integer versionCounter
   character_36_ versionId
+  integer widgetcount
 }
 "public.scheduled_job" {
   timestamp_3__with_time_zone createdAt

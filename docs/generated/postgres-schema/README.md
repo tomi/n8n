@@ -119,9 +119,10 @@ Auto-generated from the PostgreSQL migrations in @n8n/db. Do not edit by hand.
 | [public.user_favorites](public.user_favorites.md) | 4 |  | BASE TABLE |
 | [public.variables](public.variables.md) | 5 |  | BASE TABLE |
 | [public.webhook_entity](public.webhook_entity.md) | 6 |  | BASE TABLE |
+| [public.widget](public.widget.md) | 8 |  | BASE TABLE |
 | [public.workflow_builder_session](public.workflow_builder_session.md) | 9 |  | BASE TABLE |
 | [public.workflow_dependency](public.workflow_dependency.md) | 9 |  | BASE TABLE |
-| [public.workflow_entity](public.workflow_entity.md) | 20 |  | BASE TABLE |
+| [public.workflow_entity](public.workflow_entity.md) | 21 |  | BASE TABLE |
 | [public.workflow_history](public.workflow_history.md) | 11 |  | BASE TABLE |
 | [public.workflow_publication_outbox](public.workflow_publication_outbox.md) | 7 |  | BASE TABLE |
 | [public.workflow_publication_trigger_status](public.workflow_publication_trigger_status.md) | 8 |  | BASE TABLE |
@@ -1435,6 +1436,16 @@ erDiagram
   varchar webhookPath
   varchar_36_ workflowId FK
 }
+"public.widget" {
+  text config
+  varchar_50_ createdat
+  varchar_36_ id
+  varchar_10_ isenabled
+  varchar_36_ refid
+  double_precision version
+  varchar_255_ widgettype
+  varchar_36_ workflowid
+}
 "public.workflow_builder_session" {
   varchar_255_ activeVersionCardId
   timestamp_3__with_time_zone createdAt
@@ -1478,6 +1489,7 @@ erDiagram
   timestamp_3__with_time_zone updatedAt
   integer versionCounter
   character_36_ versionId
+  integer widgetcount
 }
 "public.workflow_history" {
   varchar_255_ authors

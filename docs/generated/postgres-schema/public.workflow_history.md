@@ -86,6 +86,7 @@ erDiagram
   timestamp_3__with_time_zone updatedAt
   integer versionCounter
   character_36_ versionId
+  integer widgetcount
 }
 "public.workflow_publication_trigger_status" {
   timestamp_3__with_time_zone createdAt

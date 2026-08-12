@@ -91,6 +91,7 @@ erDiagram
   datetime_3_ updatedAt
   INTEGER versionCounter
   varchar_36_ versionId
+  INT widgetCount
 }
 "workflow_publication_trigger_status" {
   datetime_3_ createdAt

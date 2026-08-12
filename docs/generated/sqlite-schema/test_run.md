@@ -143,6 +143,7 @@ erDiagram
   datetime_3_ updatedAt
   INTEGER versionCounter
   varchar_36_ versionId
+  INT widgetCount
 }
 ```
 

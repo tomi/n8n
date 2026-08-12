@@ -103,6 +103,7 @@ erDiagram
   timestamp_3__with_time_zone updatedAt
   integer versionCounter
   character_36_ versionId
+  integer widgetcount
 }
 "public.workflow_review_request" {
   timestamp_3__with_time_zone approvedAt

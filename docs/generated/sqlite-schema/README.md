@@ -119,9 +119,10 @@ Auto-generated from the SQLite migrations in @n8n/db. Do not edit by hand.
 | [user_favorites](user_favorites.md) | 4 |  | table |
 | [variables](variables.md) | 5 |  | table |
 | [webhook_entity](webhook_entity.md) | 6 |  | table |
+| [widget](widget.md) | 8 |  | table |
 | [workflow_builder_session](workflow_builder_session.md) | 9 |  | table |
 | [workflow_dependency](workflow_dependency.md) | 9 |  | table |
-| [workflow_entity](workflow_entity.md) | 20 |  | table |
+| [workflow_entity](workflow_entity.md) | 21 |  | table |
 | [workflow_history](workflow_history.md) | 11 |  | table |
 | [workflow_publication_outbox](workflow_publication_outbox.md) | 7 |  | table |
 | [workflow_publication_trigger_status](workflow_publication_trigger_status.md) | 8 |  | table |
@@ -1424,6 +1425,16 @@ erDiagram
   varchar webhookPath PK
   varchar_36_ workflowId
 }
+"widget" {
+  TEXT config
+  varchar_50_ createdAt
+  varchar_36_ id PK
+  varchar_10_ isEnabled
+  varchar_36_ refId
+  double_precision version
+  varchar_255_ widgetType
+  varchar_36_ workflowId
+}
 "workflow_builder_session" {
   varchar_255_ activeVersionCardId
   datetime_3_ createdAt
@@ -1467,6 +1478,7 @@ erDiagram
   datetime_3_ updatedAt
   INTEGER versionCounter
   varchar_36_ versionId
+  INT widgetCount
 }
 "workflow_history" {
   varchar_255_ authors
