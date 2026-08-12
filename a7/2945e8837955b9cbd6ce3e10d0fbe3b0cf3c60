@@ -1,0 +1,59 @@
+packages/cli/test/integration/workflows/workflow-publication-outbox-consumer.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 124,165,192,226
+packages/cli/test/integration/workflows/workflow-publication-reconciler.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 124,138,148-188,198,214,228,241,255,267,281,288,290,302,313,322,338,352,365,377,381,402,411,423,442,463,467,480,495,499,513,521,530,537,554,573,585,591
+docs/generated/sqlite-schema/workflow_publication_outbox.md
+  s_18bf5af118a584::t_46c9fd4db49bf4 9,22,31-32,52
+packages/cli/src/workflows/workflow.service.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 14,1587-1592,1633-1638
+packages/cli/src/workflows/publication/__tests__/workflow-publication-applier.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 286,294-326,353,403,425,493,705
+docs/generated/sqlite-schema/README.md
+  s_18bf5af118a584::t_46c9fd4db49bf4 126,1489
+packages/@n8n/db/src/repositories/workflow-publication-outbox.repository.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 11,15-16,51-53,58,62-67,71,77,85-86,88-89,96,102-103,105-106,119-122,126,130,133-136,152-153,158,162-165,178-179,184
+docs/generated/postgres-schema/public.workflow_publication_outbox.md
+  s_18bf5af118a584::t_46c9fd4db49bf4 11,20,26,49
+packages/@n8n/db/src/entities/workflow-publication-outbox.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 24-42,61-62
+packages/@n8n/db/src/entities/index.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 68,150
+packages/@n8n/db/src/migrations/common/1786519946974-AddReasonToWorkflowPublicationOutbox.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 1-37
+packages/cli/test/integration/database/repositories/workflow-publication-outbox.repository.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 25,38-39,50-98,101,112,121-122,133,136,140,153,158,166,178,190,202,218,221,233,267,279,288,301,304,334,387-388,437,459,480-481,496,498,510,529
+packages/cli/test/integration/commands/start.cmd.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 143
+packages/cli/src/workflows/__tests__/workflow.service.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 1376
+packages/cli/src/workflows/triggers/__tests__/workflow-trigger-activator.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 288,308-349,393,550,594,634,680,721,759,801,841,984,1013
+packages/cli/src/workflows/publication/workflow-publication-applier.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 7,14,28-40,169-176
+docs/generated/postgres-schema/README.md
+  s_18bf5af118a584::t_46c9fd4db49bf4 126,1500
+packages/cli/test/migration/1786519946974-add-reason-to-workflow-publication-outbox.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 1-114
+packages/cli/src/workflows/publication/workflow-publication-reconciler.service.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 6,91,105,126-129,131,148,155,162,167,215,271-275,278
+packages/cli/src/workflows/publication/__tests__/workflow-publication-reconciler.service.test.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 127-160,244,246,261,274,276,282,284,295,297,308,310-313,326,337,352,373,387,402,416,440
+packages/cli/src/workflows/triggers/workflow-trigger-activator.ts
+  s_18bf5af118a584::t_46c9fd4db49bf4 247,251,269,299-305,313,507,513-519,538,548,642,648
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "a72945e8837955b9cbd6ce3e10d0fbe3b0cf3c60",
+  "prompts": {},
+  "sessions": {
+    "s_18bf5af118a584": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1fb56a58-89a6-4f11-8150-8848893139e2",
+        "model": "claude-sonnet-5"
+      },
+      "human_author": "Tomi Turtiainen <10324676+tomi@users.noreply.github.com>"
+    }
+  }
+}
