@@ -1,0 +1,14 @@
+packages/@n8n/db/src/migrations/common/1786534639037-TomiTesting.ts
+  h_8fb27e0cdf6d1e 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "2d82c6f029aa84f09f45591c11f5818d4481f111",
+  "prompts": {},
+  "humans": {
+    "h_8fb27e0cdf6d1e": {
+      "author": "Tomi Turtiainen <10324676+tomi@users.noreply.github.com>"
+    }
+  }
+}
